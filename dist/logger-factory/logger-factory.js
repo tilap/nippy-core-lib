@@ -57,6 +57,8 @@ module.exports = function () {
           return _winston2.default.transports.Console;
         case 'file':
           return _winston2.default.transports.File;
+        case 'http':
+          return _winston2.default.transports.Http;
         default:
           if (type.constructor === String) {
             try {

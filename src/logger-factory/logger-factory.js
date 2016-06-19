@@ -80,6 +80,8 @@ module.exports = class LoggerFactory {
         return winston.transports.Console;
       case 'file':
         return winston.transports.File;
+      case 'http':
+        return winston.transports.Http;
       default:
         if (type.constructor === String) {
           try {
